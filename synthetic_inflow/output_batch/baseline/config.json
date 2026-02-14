@@ -1,0 +1,19 @@
+{
+  "years_to_generate": 200,
+  "seasonal_period": 365,
+  "ar_max_lag": 30,
+  "markov_types": 5,
+  "random_seed": 12,
+  "output_dir": "/Users/apple/Documents/Github/PaperWriting/论文翻译/面向长时序水库调度的强化学习环境构建与状态表征研究_251025/Journal of Hydrology Revise/input/synthetic_inflow/output_batch/baseline",
+  "residual_scale_strength": 0.9,
+  "residual_scale_min": 0.4,
+  "residual_scale_max": 1.3,
+  "low_flow_alignment_strength": 0.99,
+  "dual_scale_strength": 0.88,
+  "dual_scale_min": 0.05,
+  "dual_scale_max": 1.4,
+  "high_flow_enhance_strength": 0.2,
+  "high_flow_enhance_quantile": 0.9,
+  "high_flow_enhance_exponent": 1.5,
+  "high_flow_enhance_max_multiplier": 2.0
+}

@@ -1,0 +1,96 @@
+[
+  {
+    "name": "baseline",
+    "description": "基线配置：标准参数",
+    "output_dir": "/Users/apple/Documents/Github/PaperWriting/论文翻译/面向长时序水库调度的强化学习环境构建与状态表征研究_251025/Journal of Hydrology Revise/input/synthetic_inflow/output_batch/baseline",
+    "summary": {
+      "historical_basic": {
+        "mean": 12169.924305126044,
+        "std": 7081.123141944448,
+        "var": 50142304.95138122,
+        "skew": 1.2160801050688363,
+        "kurtosis": 4.5570654797589505
+      },
+      "synthetic_basic": {
+        "mean": 12132.58429842349,
+        "std": 7070.894139093911,
+        "var": 49997543.926272616,
+        "skew": 1.3232944255889612,
+        "kurtosis": 5.356658006421786
+      },
+      "year_types_freq": {
+        "特丰水年": 0.2321,
+        "丰水年": 0.0836,
+        "平水年": 0.3029,
+        "枯水年": 0.1896,
+        "特枯水年": 0.1918
+      }
+    },
+    "config": {
+      "years_to_generate": 200,
+      "seasonal_period": 365,
+      "ar_max_lag": 30,
+      "markov_types": 5,
+      "random_seed": 12,
+      "output_dir": "/Users/apple/Documents/Github/PaperWriting/论文翻译/面向长时序水库调度的强化学习环境构建与状态表征研究_251025/Journal of Hydrology Revise/input/synthetic_inflow/output_batch/baseline",
+      "residual_scale_strength": 0.9,
+      "residual_scale_min": 0.4,
+      "residual_scale_max": 1.3,
+      "low_flow_alignment_strength": 0.99,
+      "dual_scale_strength": 0.88,
+      "dual_scale_min": 0.05,
+      "dual_scale_max": 1.4,
+      "high_flow_enhance_strength": 0.2,
+      "high_flow_enhance_quantile": 0.9,
+      "high_flow_enhance_exponent": 1.5,
+      "high_flow_enhance_max_multiplier": 2.0
+    }
+  },
+  {
+    "name": "enhanced_flow",
+    "description": "强化极端流量：low_flow_alignment_strength=1.2",
+    "output_dir": "/Users/apple/Documents/Github/PaperWriting/论文翻译/面向长时序水库调度的强化学习环境构建与状态表征研究_251025/Journal of Hydrology Revise/input/synthetic_inflow/output_batch/enhanced_flow",
+    "summary": {
+      "historical_basic": {
+        "mean": 12169.924305126044,
+        "std": 7081.123141944448,
+        "var": 50142304.95138122,
+        "skew": 1.2160801050688363,
+        "kurtosis": 4.5570654797589505
+      },
+      "synthetic_basic": {
+        "mean": 12242.223983752163,
+        "std": 8320.488398600917,
+        "var": 69230527.19125246,
+        "skew": 1.8807326278851082,
+        "kurtosis": 8.18782255859826
+      },
+      "year_types_freq": {
+        "特丰水年": 0.2321,
+        "丰水年": 0.0836,
+        "平水年": 0.3029,
+        "枯水年": 0.1896,
+        "特枯水年": 0.1918
+      }
+    },
+    "config": {
+      "years_to_generate": 200,
+      "seasonal_period": 365,
+      "ar_max_lag": 30,
+      "markov_types": 5,
+      "random_seed": 12,
+      "output_dir": "/Users/apple/Documents/Github/PaperWriting/论文翻译/面向长时序水库调度的强化学习环境构建与状态表征研究_251025/Journal of Hydrology Revise/input/synthetic_inflow/output_batch/enhanced_flow",
+      "residual_scale_strength": 0.8,
+      "residual_scale_min": 0.3,
+      "residual_scale_max": 1.3,
+      "low_flow_alignment_strength": 1.2,
+      "dual_scale_strength": 0.9,
+      "dual_scale_min": 0.03,
+      "dual_scale_max": 1.5,
+      "high_flow_enhance_strength": 0.35,
+      "high_flow_enhance_quantile": 0.75,
+      "high_flow_enhance_exponent": 1.5,
+      "high_flow_enhance_max_multiplier": 2.2
+    }
+  }
+]
