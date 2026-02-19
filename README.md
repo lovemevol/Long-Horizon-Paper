@@ -9,12 +9,12 @@ Repository (public): `https://github.com/lovemevol/Long-Horizon-Paper.git`
 ## 1. Scope of this release
 
 This release provides:
-- Synthetic inflow generation code and example outputs used in the study.
-- DRL experiment configuration scripts used to define the paper's training settings.
+- Synthetic inflow generation code, reproduction scripts, and shared outputs used in the study.
+- Full DRL experiment configuration scripts used to define the paper's training settings.
 
-This release does not provide:
-- The full internal DRL environment/system codebase.
-- Restricted historical inflow observations from the source authority.
+Scope notes:
+- End-to-end DRL retraining requires a compatible external reservoir DRL environment/framework.
+- Historical inflow observations from the source authority remain access-restricted.
 
 ## 2. Folder structure
 
@@ -103,6 +103,7 @@ Key files:
 ## 4. Using DRL training configurations
 
 `DRL_training_config` provides the exact paper-related hyperparameter and setting files.
+In the manuscript, Table 3 reports the core PPO hyperparameters, while this folder provides the full experiment-level settings.
 
 These scripts are intended for:
 - Method inspection.
@@ -122,10 +123,11 @@ python DRL_training_config/1_train_seed.py --runs 5 --interval 5
 
 What can be reproduced from this release:
 - Synthetic inflow generation workflow and its study outputs (`output_batch`).
+- Statistical-validation workflow corresponding to manuscript Figure 8.
 - Paper-related DRL parameterization and experiment settings.
 
-What cannot be fully reproduced from this release alone:
-- End-to-end DRL training and evaluation without the external reservoir DRL environment/system.
+Scope note for full rerun:
+- End-to-end DRL training and evaluation require a compatible external reservoir DRL environment/system.
 
 ## 6. Why only configuration files are shared for DRL
 
